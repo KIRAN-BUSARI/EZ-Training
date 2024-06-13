@@ -10,3 +10,4 @@ def num(n):
 
 for i in range(1, 101):
     num(i)
+    print(i)
