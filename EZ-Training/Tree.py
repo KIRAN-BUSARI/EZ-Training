@@ -38,6 +38,6 @@ if __name__=="__main__":
     root.right.right = Node(7)
     # print(root.val,root.left.val,root.right.val)
 
-# preorder(root)
-# postorder(root)
+preorder(root)
+postorder(root)
 inorder(root)
