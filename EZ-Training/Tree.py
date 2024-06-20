@@ -7,7 +7,7 @@ class Node:
 def preorder(root):
     if root == None:
         return
-    print(root.val)
+    print(root.val,end=" ")
     preorder(root.left)
     preorder(root.right)
 
@@ -16,14 +16,14 @@ def postorder(root):
         return
     postorder(root.left)
     postorder(root.right)
-    print(root.val)
+    print(root.val,end=" ")
 
 def inorder(root):
     if root == None:
         return
-    inorder(root.right)
-    print(root.val)
     inorder(root.left)
+    print(root.val,end=" ")
+    inorder(root.right)
 
 if __name__=="__main__":
     root = Node(1)
@@ -38,6 +38,9 @@ if __name__=="__main__":
     root.right.right = Node(7)
     # print(root.val,root.left.val,root.right.val)
 
+print("\nPreorder : ")
 preorder(root)
+print("\nPostorder : ")
 postorder(root)
+print("\nInorder : ")
 inorder(root)
